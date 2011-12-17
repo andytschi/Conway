@@ -1,19 +1,18 @@
 package de.empusa.conway.impl;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
-import java.util.List;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 
-import de.empusa.conway.Cell;
-import de.empusa.conway.Universe;
+import de.empusa.conway.api.Cell;
+import de.empusa.conway.api.Lifecycle;
+import de.empusa.conway.api.Universe;
 
 @RunWith(value=Parameterized.class)
 public class TestUniverse {

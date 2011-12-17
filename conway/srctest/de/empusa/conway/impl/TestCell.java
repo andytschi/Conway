@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 import org.junit.Before;
 
-import de.empusa.conway.Cell;
+import de.empusa.conway.api.Cell;
 import de.empusa.conway.impl.CellImpl;
 
 public class TestCell {
