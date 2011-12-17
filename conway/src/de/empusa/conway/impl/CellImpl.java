@@ -1,6 +1,8 @@
 package de.empusa.conway.impl;
 
-import de.empusa.conway.Cell;
+import de.empusa.conway.api.Cell;
+import de.empusa.conway.api.Lifecycle;
+
 
 class CellImpl implements Cell {
 	private Lifecycle lifecycle;
