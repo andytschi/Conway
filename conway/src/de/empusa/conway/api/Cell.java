@@ -18,4 +18,12 @@ public interface Cell {
 
 	Lifecycle getLifecycle();
 
+	void put(Direction d, Cell cell);
+
+	Cell get(Direction d);
+
+	int sumLivingCell();
+
+	void translate(Lifecycle nextLifecycle);
+
 }
