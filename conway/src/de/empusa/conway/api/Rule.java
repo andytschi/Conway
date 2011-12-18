@@ -2,8 +2,8 @@ package de.empusa.conway.api;
 
 
 public interface Rule {
-	public void givenThatCellIs(Lifecycle aliveOrDead);
-	public void whenCellHasInNeighborCells(Comparator moreLessOrExact, int livingCells);
-	public void thanCellsNextLifecyleIs(Lifecycle lifecycle);
+	public void whenCellIs(Lifecycle aliveOrDead);
+	public void whenCellHasLivingNeighborCells(Comparator moreLessOrExact, int livingCells);
 	public boolean applyOn(Cell cell);
+	public void thanCellsNextLifecyleIs(Lifecycle lifecycle);
 }

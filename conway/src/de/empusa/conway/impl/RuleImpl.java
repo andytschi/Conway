@@ -10,12 +10,12 @@ public class RuleImpl implements Rule{
 	private Comparator comparator;
 	private int livingCells;
 	@Override
-	public void givenThatCellIs(Lifecycle aliveOrDead) {
+	public void whenCellIs(Lifecycle aliveOrDead) {
 		currentLifecycle = aliveOrDead;
 	}
 
 	@Override
-	public void whenCellHasInNeighborCells(Comparator moreLessOrExact,
+	public void whenCellHasLivingNeighborCells(Comparator moreLessOrExact,
 			int livingCells) {
 		comparator = moreLessOrExact;
 		this.livingCells = livingCells;
